@@ -4,59 +4,96 @@ import Head from 'next/head';
 
 export default function Layout({ children, home }) {
   return (
-    <div className="container">
+    <div className="kindle-container">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       
-      <header className="header">
-        <h2 className="site-title">
-          <Link href="/">My Blog</Link>
-        </h2>
+      <header className="kindle-header">
+        {home ? (
+          <h2 className="site-title">My Blog</h2>
+        ) : (
+          <h2 className="site-title">
+            <Link href="/">My Blog</Link>
+          </h2>
+        )}
       </header>
       
-      <main>{children}</main>
+      <main className="kindle-content">{children}</main>
       
       {!home && (
-        <div className="back-link">
-          <Link href="/">← Back to home</Link>
+        <div className="pagination">
+          <Link href="/" className="prev-page">← Back to library</Link>
         </div>
       )}
       
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} My Blog</p>
+      <footer className="kindle-footer">
+        <div className="progress-indicator">
+          <div className="page-info">© {new Date().getFullYear()} My Blog</div>
+        </div>
       </footer>
       
       <style jsx>{`
-        .header {
+        .kindle-container {
+          position: relative;
+          padding: 1.5rem 2rem;
+        }
+        
+        .kindle-header {
           display: flex;
           justify-content: center;
-          padding: 2rem 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 1rem 0 2rem;
           margin-bottom: 2rem;
           text-align: center;
+          border-bottom: 1px solid var(--border-color);
         }
         
         .site-title {
           margin: 0;
-          letter-spacing: 1px;
+          font-weight: normal;
+          letter-spacing: 0.5px;
+          font-size: 1.3rem;
         }
         
-        .site-title a {
-          text-decoration: none;
+        .kindle-content {
+          min-height: 70vh;
         }
         
-        .back-link {
-          margin: 3rem 0;
-          text-align: center;
-        }
-        
-        .footer {
-          margin-top: 4rem;
-          padding: 2rem 0;
-          border-top: 1px solid rgba(0, 0, 0, 0.1);
-          text-align: center;
+        .pagination {
+          display: flex;
+          justify-content: center;
+          margin: 3rem 0 1.5rem;
           font-size: 0.9rem;
+          color: #666;
+        }
+        
+        .prev-page, .next-page {
+          padding: 0.5rem 1rem;
+        }
+        
+        .kindle-footer {
+          margin-top: 2.5rem;
+          padding: 1rem 0;
+          border-top: 1px solid var(--border-color);
+          text-align: center;
+          font-size: 0.8rem;
+          color: #777;
+        }
+        
+        .progress-indicator {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .page-info {
+          font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+          .kindle-container {
+            padding: 1rem;
+          }
         }
       `}</style>
     </div>
