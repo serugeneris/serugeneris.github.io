@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Layout from '../components/layout';
 import Search from '../components/search';
 import { getSortedPostsData } from '../../lib/posts';
@@ -39,11 +40,11 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>Serugeneris' Blog</title>
+        <title>Serugeneris&apos; Blog</title>
       </Head>
       
       <section className="intro">
-        <h1>Welcome to Serugeneris' Blog</h1>
+        <h1>Welcome to Serugeneris&apos; Blog</h1>
       </section>
       
       {latestPost && (
@@ -52,7 +53,18 @@ export default function Home({ allPostsData }) {
           <div className="featured-post-container">
             {latestPost.image && (
               <div className="featured-post-image">
-                <img src={latestPost.image} alt={latestPost.title} />
+                <Image 
+                  src={latestPost.image} 
+                  alt={latestPost.title}
+                  width={600}
+                  height={300}
+                  style={{
+                    maxWidth: '100%',
+                    maxHeight: '300px',
+                    objectFit: 'cover',
+                    borderRadius: '4px'
+                  }}
+                />
               </div>
             )}
             <div className="featured-post-content">

@@ -11,10 +11,10 @@ export default function Layout({ children, home }) {
       
       <header className="kindle-header">
         {home ? (
-          <h2 className="site-title">Serugeneris' Blog</h2>
+          <h2 className="site-title">Serugeneris&apos; Blog</h2>
         ) : (
           <h2 className="site-title">
-            <Link href="/">Serugeneris' Blog</Link>
+            <Link href="/">Serugeneris&apos; Blog</Link>
           </h2>
         )}
       </header>
@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
       
       <footer className="kindle-footer">
         <div className="progress-indicator">
-          <div className="page-info">© {new Date().getFullYear()} Serugeneris' Blog</div>
+          <div className="page-info">© {new Date().getFullYear()} Serugeneris&apos; Blog</div>
         </div>
       </footer>
       
