@@ -5,10 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // GitHub Pages configuration
-  basePath: process.env.NODE_ENV === 'production' ? '/serugeneris.github.io' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/serugeneris.github.io/' : '',
+  // GitHub Pages specific configuration
   trailingSlash: true,
+  distDir: 'out',
 };
 
 export default nextConfig;
