@@ -156,6 +156,7 @@ export default function Home({ allPostsData }) {
           width: 100%;
           margin-bottom: 1.5rem;
           text-align: center;
+          margin-right: 1rem;
         }
         
         .featured-post-image img {
