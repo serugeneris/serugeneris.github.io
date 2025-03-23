@@ -25,11 +25,16 @@ export default function Post({ postData }) {
       <style jsx>{`
         .post {
           max-width: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
         
         .post-header {
           margin-bottom: 2.5rem;
           text-align: center;
+          width: 100%;
         }
         
         .post-title {
@@ -43,7 +48,10 @@ export default function Post({ postData }) {
         }
         
         .post-content {
-          /* This will style the markdown content */
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
         
         .post-content :global(h2),
@@ -51,17 +59,20 @@ export default function Post({ postData }) {
         .post-content :global(h4) {
           margin-top: 2rem;
           margin-bottom: 1rem;
+          text-align: center;
+          width: 100%;
         }
         
         .post-content :global(p) {
           margin-bottom: 1.5rem;
-          text-align: justify;
+          text-align: center;
+          width: 100%;
         }
         
         .post-content :global(ul),
         .post-content :global(ol) {
-          margin-left: 1.5rem;
           margin-bottom: 1.5rem;
+          width: 80%;
         }
         
         .post-content :global(li) {

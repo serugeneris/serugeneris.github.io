@@ -11,10 +11,10 @@ export default function Layout({ children, home }) {
       
       <header className="kindle-header">
         {home ? (
-          <h2 className="site-title">My Blog</h2>
+          <h2 className="site-title">Serugeneris' Blog</h2>
         ) : (
           <h2 className="site-title">
-            <Link href="/">My Blog</Link>
+            <Link href="/">Serugeneris' Blog</Link>
           </h2>
         )}
       </header>
@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
       
       <footer className="kindle-footer">
         <div className="progress-indicator">
-          <div className="page-info">© {new Date().getFullYear()} My Blog</div>
+          <div className="page-info">© {new Date().getFullYear()} Serugeneris' Blog</div>
         </div>
       </footer>
       
@@ -37,6 +37,11 @@ export default function Layout({ children, home }) {
         .kindle-container {
           position: relative;
           padding: 1.5rem 2rem;
+          max-width: 800px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
         
         .kindle-header {
@@ -46,6 +51,7 @@ export default function Layout({ children, home }) {
           margin-bottom: 2rem;
           text-align: center;
           border-bottom: 1px solid var(--border-color);
+          width: 100%;
         }
         
         .site-title {
@@ -57,6 +63,10 @@ export default function Layout({ children, home }) {
         
         .kindle-content {
           min-height: 70vh;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
         
         .pagination {
@@ -78,6 +88,7 @@ export default function Layout({ children, home }) {
           text-align: center;
           font-size: 0.8rem;
           color: #777;
+          width: 100%;
         }
         
         .progress-indicator {
