@@ -1,6 +1,7 @@
 // components/layout.js
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Layout({ children, home }) {
   return (
@@ -10,13 +11,22 @@ export default function Layout({ children, home }) {
       </Head>
       
       <header className="kindle-header">
-        {home ? (
-          <h2 className="site-title">Serugeneris&apos; Blog</h2>
-        ) : (
-          <h2 className="site-title">
-            <Link href="/">Serugeneris&apos; Blog</Link>
-          </h2>
-        )}
+        <div className="header-content">
+          <Image 
+            src="/images/contrasentido.png"
+            alt="Contrasentido Logo"
+            width={50}
+            height={50}
+            className="site-logo"
+          />
+          {home ? (
+            <h2 className="site-title">Contrasentido</h2>
+          ) : (
+            <h2 className="site-title">
+              <Link href="/">Contrasentido</Link>
+            </h2>
+          )}
+        </div>
       </header>
       
       <main className="kindle-content">{children}</main>
@@ -29,7 +39,7 @@ export default function Layout({ children, home }) {
       
       <footer className="kindle-footer">
         <div className="progress-indicator">
-          <div className="page-info">© {new Date().getFullYear()} Serugeneris&apos; Blog</div>
+          <div className="page-info">© {new Date().getFullYear()} Contrasentido</div>
         </div>
       </footer>
       
@@ -52,6 +62,16 @@ export default function Layout({ children, home }) {
           text-align: center;
           border-bottom: 1px solid var(--border-color);
           width: 100%;
+        }
+        
+        .header-content {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+        
+        .site-logo {
+          border-radius: 4px;
         }
         
         .site-title {

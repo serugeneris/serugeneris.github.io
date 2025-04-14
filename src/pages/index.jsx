@@ -40,16 +40,16 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>Serugeneris&apos; Blog</title>
+        <title>Contrasentido</title>
       </Head>
       
       <section className="intro">
-        <h1>Welcome to Serugeneris&apos; Blog</h1>
+        <h1>Bienvenidos a Contrasentido</h1>
       </section>
       
       {latestPost && (
         <section className="featured-post">
-          <h2 className="section-title featured-post-title-heading">Latest Post</h2>
+          <h2 className="section-title featured-post-title-heading">Última entrada</h2>
           <div className="featured-post-container">
             {latestPost.image && (
               <div className="featured-post-image">
@@ -74,7 +74,7 @@ export default function Home({ allPostsData }) {
               <div className="featured-post-date">{latestPost.date}</div>
               <p className="featured-post-excerpt">{latestPost.excerpt}</p>
               <Link href={`/posts/${latestPost.id}`} className="read-more">
-                Read more &rarr;
+                Leer mas &rarr;
               </Link>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Home({ allPostsData }) {
       <section className="content-section">
         <div className="posts-search-container">
           <div className="posts-container">
-            <h2 className="section-title">{isSearching ? 'Search Results' : 'All Posts'}</h2>
+            <h2 className="section-title">{isSearching ? 'Resultados de búsqueda' : 'Todas las demás entradas'}</h2>
             {otherPosts.length > 0 ? (
               <ul className="posts-list">
                 {otherPosts.map(({ id, date, title, excerpt }) => (
@@ -98,13 +98,13 @@ export default function Home({ allPostsData }) {
                 ))}
               </ul>
             ) : (
-              <p className="no-posts">No posts found matching your search.</p>
+              <p className="no-posts">No se encontraron entradas que coincidan con los términos de búsqueda.</p>
             )}
           </div>
           
           <div className="search-sidebar">
             <div className="sticky-search">
-              <h3>Search Posts</h3>
+              <h3>Buscar Entradas</h3>
               <Search onSearch={handleSearch} />
             </div>
           </div>

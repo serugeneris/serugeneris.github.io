@@ -16,10 +16,10 @@ export default function Search({ onSearch }) {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search posts..."
+          placeholder="Buscar entradas..."
           className="search-input"
         />
-        <button type="submit" className="search-button">Search</button>
+        <button type="submit" className="search-button">Buscar</button>
       </form>
 
       <style jsx>{`
