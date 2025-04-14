@@ -33,7 +33,7 @@ export default function Layout({ children, home }) {
       
       {!home && (
         <div className="pagination">
-          <Link href="/" className="prev-page">← Back to library</Link>
+          <Link href="/" className="prev-page">← Volver al inicio</Link>
         </div>
       )}
       
