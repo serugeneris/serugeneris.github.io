@@ -11,7 +11,7 @@ export default function Post({ postData }) {
         <meta property="og:title" content={postData.title} />
         <meta property="og:description" content={postData.excerpt || "Contrasentido es un blog de temas variados."} />
         <meta property="og:image" content={postData.image || "/images/contrasentido.png"} />
-        <meta property="og:url" content={`https://yourwebsite.com/posts/${postData.id}`} />
+        <meta property="og:url" content={`https://contrasentido.ar/posts/${postData.id}`} />
       </Head>
       
       <article className="post">

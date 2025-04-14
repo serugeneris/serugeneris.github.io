@@ -41,6 +41,10 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>Contrasentido</title>
+        <meta property="og:title" content="Contrasentido" />
+        <meta property="og:description" content="Bienvenidos a Contrasentido, un blog de temas variados." />
+        <meta property="og:image" content="/images/contrasentido.png" />
+        <meta property="og:url" content="https://contrasentido.ar" />
       </Head>
       
       <section className="intro">
