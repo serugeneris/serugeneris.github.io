@@ -47,10 +47,6 @@ export default function Home({ allPostsData }) {
         <meta property="og:url" content="https://contrasentido.ar" />
       </Head>
       
-      <section className="intro">
-        <h1>Bienvenidos a Contrasentido</h1>
-      </section>
-      
       {latestPost && (
         <section className="featured-post">
           <h2 className="section-title featured-post-title-heading">Última entrada</h2>
@@ -76,7 +72,7 @@ export default function Home({ allPostsData }) {
                 <h3 className="featured-post-title">{latestPost.title}</h3>
               </Link>
               <div className="featured-post-date">{latestPost.date}</div>
-              <p className="featured-post-excerpt">{latestPost.excerpt}</p>
+              <p className="featured-post-excerpt">{latestPost.description}</p>
               <Link href={`/posts/${latestPost.id}`} className="read-more">
                 Leer mas &rarr;
               </Link>
@@ -91,13 +87,13 @@ export default function Home({ allPostsData }) {
             <h2 className="section-title">{isSearching ? 'Resultados de búsqueda' : 'Todas las demás entradas'}</h2>
             {otherPosts.length > 0 ? (
               <ul className="posts-list">
-                {otherPosts.map(({ id, date, title, excerpt }) => (
+                {otherPosts.map(({ id, date, title, excerpt, description }) => (
                   <li className="post-item" key={id}>
                     <Link href={`/posts/${id}`}>
                       <h3 className="post-title">{title}</h3>
                     </Link>
                     <div className="post-date">{date}</div>
-                    <p className="post-excerpt">{excerpt}</p>
+                    <p className="post-excerpt">{description}</p>
                   </li>
                 ))}
               </ul>

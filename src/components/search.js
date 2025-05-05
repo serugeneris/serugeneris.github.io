@@ -11,12 +11,12 @@ export default function Search({ onSearch }) {
 
   return (
     <div className="search-container">
-      <form onSubmit={handleSearch}>
+      <form className="search-form" onSubmit={handleSearch}>
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Buscar entradas..."
+          placeholder="Ingresá el texto..."
           className="search-input"
         />
         <button type="submit" className="search-button">Buscar</button>
@@ -27,23 +27,28 @@ export default function Search({ onSearch }) {
           width: 100%;
           margin-bottom: 2rem;
         }
+
+        .search-form {
+          display: flex;
+          flex-direction: column;
+        }
         
         .search-input {
-          width: 70%;
+          width: 100%;
           padding: 0.5rem;
           border: 1px solid #ddd;
-          border-radius: 4px 0 0 4px;
+          border-radius: 4px;
           font-size: 0.9rem;
           outline: none;
         }
         
         .search-button {
-          width: 30%;
+          width: 100%;
           padding: 0.5rem;
           background-color: #333;
           color: white;
           border: none;
-          border-radius: 0 4px 4px 0;
+          border-radius: 4px;
           font-size: 0.9rem;
           cursor: pointer;
         }
