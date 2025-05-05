@@ -105,7 +105,7 @@ export default function Home({ allPostsData }) {
           
           <div className="search-sidebar">
             <div className="sticky-search">
-              <h3>Buscar Entradas</h3>
+              <h3 className="search-sidebar-title">Buscar Entradas</h3>
               <Search onSearch={handleSearch} />
             </div>
           </div>
@@ -254,6 +254,14 @@ export default function Home({ allPostsData }) {
           text-align: center;
           color: #666;
           font-style: italic;
+        }
+
+        .search-sidebar {
+          min-width: 120px;
+        }
+
+        .search-sidebar-title {
+          text-align: center;
         }
         
         @media (max-width: 768px) {

@@ -17,8 +17,8 @@ Lo que podemos decir sobre la primera es que existe una asimetría entre la defi
 
 Sobre la segunda definición una nota. Parece derivar del francés (de _contresens_, como consta en el Corominas [3] y en este [artículo](https://cedille.webs.ull.es/9/06curell.pdf)), lo que nos habilita a ver la definición en francés del [Larousse](https://www.larousse.fr/dictionnaires/francais/contresens/18886). Destacan dos a nuestros ojos: 
 
-1. una que la define como un absurdo, algo sin dirección alguna, que se opone directamente a como algo _debe ser_ (una oposición absoluta a la esencia de la cosa quizás)
-2. otra que la define, a partir de Husserl, como la propiedad de una expresión que contiene una contradicción interna (por oposición a _non-sense_)
+1. Una que la define como un absurdo, algo sin dirección alguna, que se opone directamente a como algo _debe ser_ (una oposición absoluta a la esencia de la cosa quizás)
+2. Otra que la define, a partir de Husserl, como la propiedad de una expresión que contiene una contradicción interna (por oposición a _non-sense_)
 
 _A prima facie_, las definiciones se contradicen. Si la primera habla de un absurdo como algo tan contrapuesto que ni siquiera tiene la mentada dirección opuesta, la segunda dice que la contradicción es interna, y por lo tanto, es parte del mismo sentido. Antes que desanimarnos, la contradicción parece ser un signo del potencialidad que tiene el _contrasentido_ para hacernos pensar, si somos lo suficientemente astutos para esquivar la trampa.
 
@@ -30,9 +30,9 @@ Podemos concluir (al menos establecerlo como proyecto) que el contrasentido pued
 
 ## Notas
 
-#### [1] Roberts y Pastor, _Diccionario etimológico indoeuropeo de la lengua española_, 1996, Pág. 155.
+[1] Roberts y Pastor, _Diccionario etimológico indoeuropeo de la lengua española_, 1996, Pág. 155.
 
-#### [2] El aroma a Spinoza se siente de lejos. Por mi formación, recomiendo ver las definiciones de _chresis_ del capítulo 2 de _El uso de los cuerpos_ de Giorgio Agamben.
+[2] El aroma a Spinoza se siente de lejos. Por mi formación, recomiendo ver las definiciones de _chresis_ del capítulo 2 de _El uso de los cuerpos_ de Giorgio Agamben.
 
-#### [3] J. Corominas, _Diccionario Crítico Etimológico de la lengua castellana_, Volúmen 4, 1954. Pág 191.
+[3] J. Corominas, _Diccionario Crítico Etimológico de la lengua castellana_, Volúmen 4, 1954. Pág 191.
 

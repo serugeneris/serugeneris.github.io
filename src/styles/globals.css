@@ -68,7 +68,6 @@ h2 {
 
 p, ul, ol {
   margin-bottom: 1.5rem;
-  text-align: justify; /* Kindle text is typically justified */
 }
 
 /* For code blocks */
