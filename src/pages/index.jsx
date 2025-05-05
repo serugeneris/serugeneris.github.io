@@ -87,7 +87,7 @@ export default function Home({ allPostsData }) {
             <h2 className="section-title">{isSearching ? 'Resultados de búsqueda' : 'Todas las demás entradas'}</h2>
             {otherPosts.length > 0 ? (
               <ul className="posts-list">
-                {otherPosts.map(({ id, date, title, excerpt, description }) => (
+                {otherPosts.map(({ id, date, title, description }) => (
                   <li className="post-item" key={id}>
                     <Link href={`/posts/${id}`}>
                       <h3 className="post-title">{title}</h3>
