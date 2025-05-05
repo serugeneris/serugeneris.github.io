@@ -29,6 +29,7 @@ export default function Home({ allPostsData }) {
       return (
         post.title.toLowerCase().includes(lowerCaseQuery) ||
         post.excerpt.toLowerCase().includes(lowerCaseQuery) ||
+        post.description.toLowerCase().includes(lowerCaseQuery) ||
         (post.tags && post.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)))
       );
     });
