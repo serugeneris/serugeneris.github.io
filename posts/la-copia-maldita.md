@@ -156,7 +156,7 @@ En mi opinión, la sospecha general que recae en las IAs es causada por el miedo
 
 En la medida en que los intentos sigan implicando esfuerzos y reinterpretaciones de las temáticas de nuestra parte, permanecemos a salvo de una mediación total de la vida (siempre posible debido a la potencia de la nueva herramienta, la primera que maneja realmente el _lenguaje_). Comprender cómo ocurre dicha mediación es la temática de otra entrada futura.
 
-Notas:
+## Notas:
 
 [1] Esto es muy importante para que la IA no tuviera el texto original en el primer ejercicio
 
