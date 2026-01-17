@@ -4,7 +4,7 @@ date: "2026-01-17"
 description: "Primera entrega de una serie sobre la soberanía en Latinoamérica. Un análisis del primer capítulo de 'Pensar sin Estado' de Ignacio Lewkowicz"
 ---
 
-![pensar-sin-estado](/images/pensar-sin-estado.jpg)
+![pensar-sin-estado](/images/pensar-sin-estado.webp)
 
 ## Primera entrega: pensando la soberanía desde Latinoamérica
 
