@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "next": "14.2.12",
+    "next": "16.2.4",
     "react": "^18",
     "react-dom": "^18",
     "remark": "^15.0.1",
@@ -22,8 +22,8 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.12",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
     "gh-pages": "^6.1.1",
     "typescript": "^5"
   }
